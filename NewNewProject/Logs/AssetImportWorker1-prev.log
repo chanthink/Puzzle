@@ -15,7 +15,7 @@ E:/Unity/Puzzle/NewNewProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57664
+51049
 Successfully changed project path to: E:/Unity/Puzzle/NewNewProject
 E:/Unity/Puzzle/NewNewProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity/Puzzle/NewNewProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19960] Host "[IP] 222.118.77.185 [Port] 0 [Flags] 2 [Guid] 2765755202 [EditorId] 2765755202 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-659L0DJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13444] Host "[IP] 222.118.77.185 [Port] 0 [Flags] 2 [Guid] 2272577910 [EditorId] 2272577910 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-659L0DJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19960] Host "[IP] 222.118.77.185 [Port] 0 [Flags] 2 [Guid] 2765755202 [EditorId] 2765755202 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-659L0DJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13444] Host "[IP] 222.118.77.185 [Port] 0 [Flags] 2 [Guid] 2272577910 [EditorId] 2272577910 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-659L0DJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 7.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.06 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.14f1 (eff2de9070d8)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004563 seconds.
-- Loaded All Assemblies, in  0.282 seconds
+Registered in 0.007179 seconds.
+- Loaded All Assemblies, in  0.426 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.205 seconds
-Domain Reload Profiling: 486ms
-	BeginReloadAssembly (92ms)
+- Finished resetting the current domain, in  0.353 seconds
+Domain Reload Profiling: 778ms
+	BeginReloadAssembly (113ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (110ms)
-		LoadAssemblies (89ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (182ms)
+		LoadAssemblies (111ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (108ms)
-				TypeCache.ScanAssembly (94ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (161ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (205ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (354ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (152ms)
+		SetupLoadedEditorAssemblies (276ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (100ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,123 +115,425 @@ Domain Reload Profiling: 486ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.489 seconds
-Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.718 seconds
+Refreshing native plugins compatible for Editor in 4.39 ms, found 1 plugins.
 Native extension for WindowsStandalone target not found
-Package Manager log level set to [2]
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.540 seconds
-Domain Reload Profiling: 1028ms
-	BeginReloadAssembly (114ms)
+- Finished resetting the current domain, in  0.734 seconds
+Domain Reload Profiling: 1450ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (307ms)
-		LoadAssemblies (233ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (461ms)
+		LoadAssemblies (364ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (123ms)
-				TypeCache.ScanAssembly (112ms)
-			ScanForSourceGeneratedMonoScriptInfo (12ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (540ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (131ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (735ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (423ms)
+		SetupLoadedEditorAssemblies (506ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (43ms)
-			ProcessInitializeOnLoadAttributes (351ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (357ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 3.72 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (59.3 KB). Loaded Objects now: 3820.
-Memory consumption went from 135.6 MB to 135.5 MB.
-Total: 2.460200 ms (FindLiveObjects: 0.173100 ms CreateObjectMapping: 0.076600 ms MarkObjects: 2.123800 ms  DeleteObjects: 0.085600 ms)
+Unloading 3074 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (55.7 KB). Loaded Objects now: 3540.
+Memory consumption went from 132.9 MB to 132.8 MB.
+Total: 4.050800 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.109000 ms MarkObjects: 3.479100 ms  DeleteObjects: 0.116300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 32551.751762 seconds.
-  path: Assets/QuarterView 3D Action BE5/Readme.asset
-  artifactKey: Guid(40de9ed37630dc5418b57960bb7be849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/QuarterView 3D Action BE5/Readme.asset using Guid(40de9ed37630dc5418b57960bb7be849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19de78945dcacdc07c7ca50b7d28dc1') in 0.009136 seconds
+  Time since last request: 36515.666906 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tokyo.prefab
+  artifactKey: Guid(cd06875f070f5524cbac813567f9c3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tokyo.prefab using Guid(cd06875f070f5524cbac813567f9c3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30eb3866adfbd027f3b9d68c386db6a') in 0.288567 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Hyogo.prefab
+  artifactKey: Guid(c8f62be5601448a4cb9790b4fc227bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Hyogo.prefab using Guid(c8f62be5601448a4cb9790b4fc227bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077e98b79c17d431c41b196a450db10a') in 0.078385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Black.prefab
+  artifactKey: Guid(540710ec46f1248dd84bd4816c4ddd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Black.prefab using Guid(540710ec46f1248dd84bd4816c4ddd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14854faba0ea45ac526f2ef805693c2') in 0.067990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Shiga.prefab
+  artifactKey: Guid(1b84a544679e04df38a7127504bc7125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Shiga.prefab using Guid(1b84a544679e04df38a7127504bc7125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ef68a825a9f17fab32ab898b6087cd') in 0.098078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 308
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Fukui.prefab
+  artifactKey: Guid(c841b6713d550db43a755b50b8fee765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Fukui.prefab using Guid(c841b6713d550db43a755b50b8fee765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbcf16a0cf4ba0149629a14c78d9d93') in 0.084293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 303
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_NewOsaka.prefab
+  artifactKey: Guid(687d709cc8ba77d46822d1c56127387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_NewOsaka.prefab using Guid(687d709cc8ba77d46822d1c56127387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9e5d7dc43a281f8d6dd4440dfc2d55') in 0.091771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 295
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Yamagata.prefab
+  artifactKey: Guid(ff565635a076b51498cd94415c1921b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Yamagata.prefab using Guid(ff565635a076b51498cd94415c1921b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f390e5d8f3f748b0680e0c0de47d979a') in 0.085338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kagoshima.prefab
+  artifactKey: Guid(aafef18d1ce750144a6038c09cab6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kagoshima.prefab using Guid(aafef18d1ce750144a6038c09cab6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dab7c6b2361f8d7b32e7e5c295740b') in 0.078352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 307
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tokushima.prefab
+  artifactKey: Guid(39807bbb9681ba94f9ccbc50b1efca19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tokushima.prefab using Guid(39807bbb9681ba94f9ccbc50b1efca19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd37bca85a73ddc17969ce97ff6526dc') in 0.090535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 303
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Hokkaido.prefab
+  artifactKey: Guid(eabaa266a156a48e9bcea1ff39f31eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Hokkaido.prefab using Guid(eabaa266a156a48e9bcea1ff39f31eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef459f341be041899cba1957ce8ec319') in 0.086271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 295
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Saga.prefab
+  artifactKey: Guid(618073cfcdbe6c545b2f07980c5871af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Saga.prefab using Guid(618073cfcdbe6c545b2f07980c5871af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37c614f54aff62cb896427c1503ef8c') in 0.075468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 307
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Saitama.prefab
+  artifactKey: Guid(057f793b7a53fe845943c2b0884592b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Saitama.prefab using Guid(057f793b7a53fe845943c2b0884592b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90a3269c69cfe4ebbed6a86b3f63417') in 0.075019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Miyagi.prefab
+  artifactKey: Guid(5981fa5cfcb575e4c9ceee7d6339ecdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Miyagi.prefab using Guid(5981fa5cfcb575e4c9ceee7d6339ecdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3517cb28981831c367339f7bb8c90aa9') in 0.070565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kumamoto.prefab
+  artifactKey: Guid(c339d81434096874dbfc49a711f31e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kumamoto.prefab using Guid(c339d81434096874dbfc49a711f31e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec5e10ddd1e5e4435db1f6702ff7dbb') in 0.071650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 295
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs
+  artifactKey: Guid(2384c781304f94680a333930ab09c24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs using Guid(2384c781304f94680a333930ab09c24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6a5d8dd901f28a38964dcee8f5816f') in 0.000689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Yamanashi.prefab
+  artifactKey: Guid(8f9c9cdba194fba41a69e2ad16fd93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Yamanashi.prefab using Guid(8f9c9cdba194fba41a69e2ad16fd93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547f6b85ba3f004a730575ab877e3a5e') in 0.073808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Queries_AllStar.prefab
+  artifactKey: Guid(27928f06e2b832448aaf9a871ba6d9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Queries_AllStar.prefab using Guid(27928f06e2b832448aaf9a871ba6d9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ff5d6fadc2598cd7fbf24199d412ce') in 1.058678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4853
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Shizuoka.prefab
+  artifactKey: Guid(7cbed4e134f2a974aa93ebdb80d281c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Shizuoka.prefab using Guid(7cbed4e134f2a974aa93ebdb80d281c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947540a90544962d5a3705d74eb203dd') in 0.093709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 299
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tottori.prefab
+  artifactKey: Guid(52b496102f078ce4d9643baed6290984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Tottori.prefab using Guid(52b496102f078ce4d9643baed6290984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e46475af526f5006797c94795d709a') in 0.080857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 313
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Models
+  artifactKey: Guid(ecbc0926fc1e640b6ac5946f143a540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Models using Guid(ecbc0926fc1e640b6ac5946f143a540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf832a93f26d9a49c7deeb0bfe1b8ce4') in 0.002530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kanagawa.prefab
+  artifactKey: Guid(76ee212d2948d4d46bc5dfb863029bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Kanagawa.prefab using Guid(76ee212d2948d4d46bc5dfb863029bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec7537015709d048e7762ec8f0f49a1') in 0.070969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 303
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Okinawa.prefab
+  artifactKey: Guid(1fc2730106497a24fbe61783b2c448a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Okinawa.prefab using Guid(1fc2730106497a24fbe61783b2c448a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02a08ec87e91f992f643879e66a8836') in 0.070565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 303
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Fukushima.prefab
+  artifactKey: Guid(01abbfdb9a4ec584ca32836d69d5f90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Fukushima.prefab using Guid(01abbfdb9a4ec584ca32836d69d5f90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847173b0de5cf6cdccdd2ab7aa0e93e5') in 0.071700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 295
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Gunma.prefab
+  artifactKey: Guid(2b7bc8324db9b824b96e79a78594374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PQAssets/Query-Chan-SD/Prefabs/Query-Chan-SD_Gunma.prefab using Guid(2b7bc8324db9b824b96e79a78594374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54642a5d6158f1c7b04f1ad18f37b844') in 0.065181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 295
+========================================================================
+Received Import Request.
+  Time since last request: 42.060684 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Coin Bronze.prefab
+  artifactKey: Guid(eff93d3a6c14e3648a925ff48d25d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Coin Bronze.prefab using Guid(eff93d3a6c14e3648a925ff48d25d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626bee31d96c4ba16bdb8a3c27688145') in 0.042783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Enemy A.prefab
+  artifactKey: Guid(464cc7c4f7ea10b47a36d7848aa9ca9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Enemy A.prefab using Guid(464cc7c4f7ea10b47a36d7848aa9ca9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e53972020c30a0bff46c863b063d3e6') in 0.057223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 72
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Luna.prefab
+  artifactKey: Guid(6f5cb1003ab50aa4b9bc26bc9ca47159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Luna.prefab using Guid(6f5cb1003ab50aa4b9bc26bc9ca47159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5719976cb29d2afe0242d22b7c225a') in 0.069473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 131
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Missile Boss.prefab
+  artifactKey: Guid(50e7f7cd6a4e20544803ae9978a43ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Missile Boss.prefab using Guid(50e7f7cd6a4e20544803ae9978a43ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7164a078fce683d119b0e47f7ffc59') in 0.040887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Player.prefab
+  artifactKey: Guid(8f5e135a19626f544908fc8f156144b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Player.prefab using Guid(8f5e135a19626f544908fc8f156144b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9320d5aa9923bd124998c0d186d7f91a') in 0.030812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 131
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Enemy D.prefab
+  artifactKey: Guid(83dab506297948d4d8d34c4fe12431ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Enemy D.prefab using Guid(83dab506297948d4d8d34c4fe12431ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f195508080b01c7e6100d7216414e86') in 0.043703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 89
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/QuarterView 3D Action BE5/Prefabs/Enemy C.prefab
+  artifactKey: Guid(06d503bba93001142b96e3510906db62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuarterView 3D Action BE5/Prefabs/Enemy C.prefab using Guid(06d503bba93001142b96e3510906db62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a0dc4e02f4b067b078e9a97fbcc50d') in 0.058916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 89
+========================================================================
+Received Import Request.
+  Time since last request: 324.934156 seconds.
+  path: Assets/Prefabs/ChangeButton.prefab
+  artifactKey: Guid(9763a86376750314bb81ba17671703a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ChangeButton.prefab using Guid(9763a86376750314bb81ba17671703a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfde1ee76ff1ba3a19631ad0a8370b6') in 0.025918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 63
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Prefabs/Final.prefab
+  artifactKey: Guid(8da020b3d27681e4dba34ee89d831e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Final.prefab using Guid(8da020b3d27681e4dba34ee89d831e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0611c40006321c7a43183c816ae8b57c') in 0.029921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/WarpStartButton3.prefab
+  artifactKey: Guid(794cb3f47fec20a439c13c4363de856e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WarpStartButton3.prefab using Guid(794cb3f47fec20a439c13c4363de856e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58dd93abbfec944fa53a512d6c9be771') in 0.039087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Prefabs/StageClear Variant.prefab
+  artifactKey: Guid(9a0c9f82793214a448b5661163c984c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageClear Variant.prefab using Guid(9a0c9f82793214a448b5661163c984c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6a3c426041af7bdf6734c0949693b4') in 0.038106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Prefabs/StageClear2.prefab
+  artifactKey: Guid(f5403b78275f1a5488e9ac9539fb7a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageClear2.prefab using Guid(f5403b78275f1a5488e9ac9539fb7a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fb6329bb88f9722c3f9a0c4d38ec66') in 0.029996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Prefabs/WarpStartButton2.prefab
+  artifactKey: Guid(ff13840fdfd05944e91acbd535cb0577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WarpStartButton2.prefab using Guid(ff13840fdfd05944e91acbd535cb0577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddac61565735115ce1507ad5350632eb') in 0.018569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Prefabs/StageThree.prefab
+  artifactKey: Guid(f3879996b0482684ab6e1a0aa69da8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageThree.prefab using Guid(f3879996b0482684ab6e1a0aa69da8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5563cc09874f076e5f24dc6edfd48785') in 0.030103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/ChangeButton3.prefab
+  artifactKey: Guid(b9a660193cf8d1240b7e7c49742e60cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ChangeButton3.prefab using Guid(b9a660193cf8d1240b7e7c49742e60cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882003b3d72a51d74862ed95bd1e4b29') in 0.027608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 63
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.371 seconds
-Refreshing native plugins compatible for Editor in 2.23 ms, found 1 plugins.
+- Loaded All Assemblies, in  0.504 seconds
+Refreshing native plugins compatible for Editor in 4.10 ms, found 1 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.457 seconds
-Domain Reload Profiling: 827ms
-	BeginReloadAssembly (131ms)
+- Finished resetting the current domain, in  0.806 seconds
+Domain Reload Profiling: 1308ms
+	BeginReloadAssembly (172ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (187ms)
-		LoadAssemblies (194ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (253ms)
+		LoadAssemblies (331ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (59ms)
-			TypeCache.Refresh (45ms)
-				TypeCache.ScanAssembly (37ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (457ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (808ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (192ms)
+		SetupLoadedEditorAssemblies (313ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (112ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 1.88 ms, found 1 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 5.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3050 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.3 KB). Loaded Objects now: 3823.
-Memory consumption went from 128.0 MB to 128.0 MB.
-Total: 1.916900 ms (FindLiveObjects: 0.183000 ms CreateObjectMapping: 0.080900 ms MarkObjects: 1.615400 ms  DeleteObjects: 0.036500 ms)
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (29.2 KB). Loaded Objects now: 3558.
+Memory consumption went from 139.7 MB to 139.6 MB.
+Total: 2.664000 ms (FindLiveObjects: 0.188800 ms CreateObjectMapping: 0.085700 ms MarkObjects: 2.309300 ms  DeleteObjects: 0.079000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -248,3 +550,71 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.501 seconds
+Refreshing native plugins compatible for Editor in 4.42 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.000 seconds
+Domain Reload Profiling: 1499ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (243ms)
+		LoadAssemblies (320ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1000ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (394ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (84ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 3.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (29.1 KB). Loaded Objects now: 3562.
+Memory consumption went from 141.6 MB to 141.6 MB.
+Total: 3.483400 ms (FindLiveObjects: 0.427300 ms CreateObjectMapping: 0.139500 ms MarkObjects: 2.876200 ms  DeleteObjects: 0.037300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

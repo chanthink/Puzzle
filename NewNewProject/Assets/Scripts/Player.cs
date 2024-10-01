@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         GetInput();
         Move();
         Turn();
-        //Jump();
+        Jump();
     }
 
     void GetInput()
@@ -67,12 +67,42 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Floor" )
+        if (collision.gameObject.tag == "Start" )
         {
             anim.SetBool("isJump", false);
             isJump = false;
         }
-        else if(collision.gameObject.tag == "Button")
+        else if(collision.gameObject.tag == "ButtonFloor")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "ButtonFloor2")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "ButtonFloor3")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "GoalFloor")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "Floor")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "StageTwo")
+        {
+            anim.SetBool("isJump", false);
+            isJump = false;
+        }
+        else if (collision.gameObject.tag == "StageThree")
         {
             anim.SetBool("isJump", false);
             isJump = false;
